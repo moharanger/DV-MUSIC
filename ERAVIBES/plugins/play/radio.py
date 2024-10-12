@@ -5,11 +5,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_string
-from ERAVIVES import app
-from ERAVIVES.utils.database import get_assistant, get_lang
-from ERAVIVES.utils.decorators.radio import RadioWrapper
-from ERAVIVES.utils.logger import play_logs
-from ERAVIVES.utils.stream.stream import stream
+from ERAVIBES import app
+from ERAVIBES.utils.database import get_assistant, get_lang
+from ERAVIBES.utils.decorators.radio import RadioWrapper
+from ERAVIBES.utils.logger import play_logs
+from ERAVIBES.utils.stream.stream import stream
 
 # Radio Station List
 RADIO_STATION = {
