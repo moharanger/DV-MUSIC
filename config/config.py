@@ -321,7 +321,7 @@ if PING_IMG_URL:
 
 
 if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "https://telegra.ph/file/f4edfbd83ec3150284aae.jpg":
+    if PLAYLIST_IMG_URL != "https://envs.sh/nv2.jpg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
                 "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
