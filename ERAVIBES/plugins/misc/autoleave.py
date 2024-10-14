@@ -9,14 +9,20 @@
 #
 
 import asyncio
-from datetime import datetime
 
 from pyrogram.enums import ChatType
 
 import config
 from ERAVIBES import app
-from ERAVIBES.core.call import ERA, autoend
-from ERAVIBES.utils.database import get_client, is_active_chat, is_autoend
+from ERAVIBES.core.call import ERA
+from ERAVIBES.core.call import _st_ as clean
+from ERAVIBES.utils.database import (
+    get_active_chats,
+    get_assistant,
+    get_client,
+    is_active_chat,
+    is_autoend,
+)
 
 
 async def auto_leave():
@@ -38,8 +44,8 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if chat_id not in [
                                 config.LOG_GROUP_ID,
-                                -1002111995244,
-                                -1002053640388,
+                                -1002159045835,
+                                -1002146211959,
                             ]:
                                 if left == 20:
                                     continue
