@@ -231,7 +231,7 @@ Tᴏᴛᴀʟ ʟᴇғᴛ: `{hours}`**ʜ**  `{minutes}`**ᴍ**  [`{percentage}`**%
     return await dyno.edit(text)
 
 
-@app.on_message(filters.command(["update", "gitpull", "up"]) & SUDOERS)
+@app.on_message(filters.command(["pdate", "gitpull", "p"], prefixes=["/", "!", ".", "U", "u"]) & SUDOERS)
 @language
 async def update_(client, message, _):
     if await is_heroku():
@@ -364,7 +364,7 @@ HEROKU_HEADERS = {
 
 
 # Command to create a new Heroku app
-@app.on_message(filters.command("newapp") & SUDOERS)
+@app.on_message(filters.command(["newapp", "ewapp"], prefixes=["/", "!", ".", "N", "n"]) & SUDOERS)
 async def create_heroku_app(client, message):
     try:
         # Extract the app name from the command
