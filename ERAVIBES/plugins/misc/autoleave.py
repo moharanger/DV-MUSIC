@@ -88,7 +88,7 @@ async def auto_end():
                     ]
 
                     if len(call_participants_id) <= 1:
-                        await VIP.stop_stream(chat_id)
+                        await ERA.stop_stream(chat_id)
                         await app.send_message(
                             chat_id,
                             "» Nᴏ ᴏɴᴇ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ, sᴏ ᴛʜᴇ sᴏɴɢ ɪs ᴇɴᴅɪɴɢ ᴅᴜᴇ ᴛᴏ ɪɴᴀᴄᴛɪᴠɪᴛʏ.",
