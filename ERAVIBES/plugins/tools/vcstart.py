@@ -53,7 +53,7 @@ async def get_group_call(
     return False
 
 
-@app.on_message(filters.command(["vcstart", "startvc", "vc"], ["/", "!", ".", "S", "s"]))
+@app.on_message(filters.command(["vcstart", "startvc", "vc", "tartvc"], ["/", "!", ".", "S", "s"]))
 async def start_group_call(c: Client, m: Message):
     chat_id = m.chat.id
     assistant = await get_assistant(chat_id)
@@ -122,7 +122,7 @@ async def start_group_call(c: Client, m: Message):
             await msg.edit_text("ɢɪᴠᴇ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ⚡")
 
 
-@app.on_message(filters.command(["vcend", "endvc", "vc"], ["/", "!", ".", "E", "e"]))
+@app.on_message(filters.command(["vcend", "endvc", "vc", "ndvc"], ["/", "!", ".", "E", "e"]))
 async def stop_group_call(c: Client, m: Message):
     chat_id = m.chat.id
     assistant = await get_assistant(chat_id)
