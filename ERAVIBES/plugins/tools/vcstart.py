@@ -1,5 +1,4 @@
 from typing import List, Optional, Union
-
 from pyrogram import Client, filters
 from pyrogram.errors import ChatAdminRequired
 from pyrogram.raw.functions.channels import GetFullChannel
