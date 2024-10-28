@@ -12,7 +12,7 @@
     "pyrogram"
     ],
     
-    "stack": "container",
+      "stack": "container",
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
@@ -35,7 +35,7 @@
         "required": false
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from `https://cloud.mongodb.com` . You can leave it blank if you want , bot will use ERA's database for you.",
+        "description": "Get a mongodb url from `https://cloud.mongodb.com` . You can leave it blank if you want , bot will use VIP's database for you.",
         "value": "",
         "required": true
       },
@@ -71,6 +71,16 @@
       },
       "AUTO_GCAST_MSG": {
         "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐀𝐔𝐓𝐎 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄 𝐖𝐇𝐈𝐂𝐇 𝐖𝐈𝐋𝐋 𝐁𝐄 𝐀𝐔𝐓𝐎 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓𝐄𝐃 𝐓𝐖𝐈𝐂𝐄 𝐈𝐍 𝐀 𝐃𝐀𝐘. ( 𝐀𝐍𝐘 𝐓𝐘𝐏𝐄 𝐎𝐅 𝐌𝐄𝐒𝐒𝐀𝐆𝐄 𝐘𝐎𝐔 𝐂𝐀𝐍 𝐂𝐎𝐏𝐘 𝐀𝐍𝐃 𝐏𝐀𝐒𝐓𝐄 𝐇𝐄𝐑𝐄 )",
+        "value": "",
+        "required": false
+      },
+      "TOKEN_ALLOW": {
+        "description": "Fill 'True' if you want to use Token data for play youtube songs, Fill 'False' to use cookies (song will play by cookies)",
+        "value": "True",
+        "required": false
+      },
+      "TOKEN_DATA": {
+        "description": "Fill here token data if you have otherwise ignore this and use cookies method for play youtube songs",
         "value": "",
         "required": false
       },
