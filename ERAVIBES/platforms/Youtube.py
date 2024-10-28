@@ -21,7 +21,7 @@ from yt_dlp import YoutubeDL
 
 import config
 from ERAVIBES.utils.database import is_on_off
-from ERAIBES.utils.formatters import time_to_seconds
+from ERAVIBES.utils.formatters import time_to_seconds
 
 def cookies():
     cookie_dir = "cookies"
