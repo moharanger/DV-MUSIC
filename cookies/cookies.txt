@@ -1,7 +1,10 @@
-CONSISTENCY	AKreu9tAR2NojkVn37VGMVIRPmTrHj1U61dU3tQGvX6pTCuHgSMdmGmDIecPPK_cGgZ0m3eYMX8UHYHgcBelssnOxYGFDKB4vs434dLzaYAPYYzMx56nxUs1B1AmqBexUsmOCwXh5ScC7WdlFBnm8Q	.youtube.com	/	2024-10-28T06:46:30.000Z	161		✓				Medium	
-GPS	1	.youtube.com	/	2024-10-28T07:01:39.683Z	4	✓	✓				Medium	
-NID	518=CBYd6hw9WnQhBtY8JQ6db4_shBFP8tnMJklpQod8WzhxOlr3iwW8f2kKQmW86RN2TllizQqVfqNYQDzI7ZlwgmRzwkUWBgV5B0tU_Gwj1snW8zjLdjZPOyC0OJJqRlAOwndJt90-6Fgu44ZnLVMHEUgGhBvaW1TT80Rvx_k1wOfJHgpsh1nHcSjJ9JI	.google.com	/	2025-04-29T06:34:31.159Z	194	✓	✓	None			Medium	
-PREF	f4=4000000&f6=40000000&tz=Asia.Calcutta&f7=100	.youtube.com	/	2025-12-02T06:36:24.618Z	50		✓				Medium	
-VISITOR_INFO1_LIVE	ZmGRT_F6UcE	.youtube.com	/	2025-04-26T06:31:39.684Z	29	✓	✓	None	https://youtube.com		Medium	
-VISITOR_PRIVACY_METADATA	CgJJThIEGgAgRg%3D%3D	.youtube.com	/	2025-04-26T06:31:39.684Z	44	✓	✓	None	https://youtube.com		Medium	
-YSC	lySFmJkPlKw	.youtube.com	/	Session	14	✓	✓	None	https://youtube.com		Medium	
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.youtube.com	TRUE	/	TRUE	1730098900	GPS	1
+.youtube.com	TRUE	/	TRUE	1764657778	PREF	f4=4000000&f6=40000000&tz=Asia.Calcutta&f7=100
+.youtube.com	TRUE	/	TRUE	1730098377	CONSISTENCY	AKreu9t3epOqsVKdwHFz8sCYvWzIlileXgUTkAzs3Idyw-wKrOWA1vHRFskBgjlB78Jf7nmGwU4ole0YDa2-Dg
+.youtube.com	TRUE	/	TRUE	0	YSC	lySFmJkPlKw
+.youtube.com	TRUE	/	TRUE	1745649100	VISITOR_INFO1_LIVE	ZmGRT_F6UcE
+.youtube.com	TRUE	/	TRUE	1745649100	VISITOR_PRIVACY_METADATA	CgJJThIEGgAgRg%3D%3D
