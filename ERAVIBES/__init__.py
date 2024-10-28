@@ -37,7 +37,7 @@ app = ERABot()
 # Assistant Client
 userbot = Userbot()
 
-from .platforms import *
+from ERAVIBES.platforms import *
 
 YouTube = YouTubeAPI()
 Carbon = CarbonAPI()
