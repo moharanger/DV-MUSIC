@@ -7,6 +7,7 @@
 #
 # All rights reserved.
 
+import json
 from ERAVIBES.core.bot import ERABot
 from ERAVIBES.core.dir import dirr
 from ERAVIBES.core.git import git
