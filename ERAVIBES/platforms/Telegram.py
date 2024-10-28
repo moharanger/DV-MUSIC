@@ -14,6 +14,7 @@ import time
 from datetime import datetime, timedelta
 from typing import Union
 
+import aiohttp
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
@@ -93,6 +94,35 @@ class TeleAPI:
                 file_name = video.file_unique_id + "." + "mp4"
             file_name = os.path.join(os.path.realpath("downloads"), file_name)
         return file_name
+
+    async def is_streamable_url(self, url: str) -> bool:
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url, timeout=5) as response:
+                    if response.status == 200:
+                        content_type = response.headers.get("Content-Type", "")
+                        if (
+                            "application/vnd.apple.mpegurl" in content_type
+                            or "application/x-mpegURL" in content_type
+                        ):
+                            return True
+                        if any(
+                            keyword in content_type
+                            for keyword in [
+                                "audio",
+                                "video",
+                                "mp4",
+                                "mpegurl",
+                                "m3u8",
+                                "mpeg",
+                            ]
+                        ):
+                            return True
+                        if url.endswith((".m3u8", ".index", ".mp4", ".mpeg", ".mpd")):
+                            return True
+        except aiohttp.ClientError:
+            pass
+        return False
 
     async def download(self, _, message, mystic, fname):
         left_time = {}
@@ -174,7 +204,7 @@ class TeleAPI:
             await mystic.edit_text(_["tg_1"].format(eta))
             return False
 
-        task = asyncio.create_task(down_load())
+        task = asyncio.create_task(down_load(), name=f"download_{message.chat.id}")
         lyrical[mystic.id] = task
         await task
         downloaded = downloader.get(message.id)
