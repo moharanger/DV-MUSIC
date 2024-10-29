@@ -10,7 +10,7 @@ from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 
 from ERAVIBES import app
-from ERAVIBES.platforms.Youtube import cookies as cookie_txt_file
+from ERAVIBES.platforms.Youtube import get_ytdl_options
 
 # Define a dictionary to track the last query timestamp for each user
 user_last_CallbackQuery_time = {}
@@ -91,10 +91,9 @@ async def download_video(client, CallbackQuery):
         "outtmpl": "%(id)s.mp4",
         "logtostderr": False,
         "quiet": True,
-        "cookiefile": cookie_txt_file(),
     }
     try:
-        with YoutubeDL(opts) as ytdl:
+        with YoutubeDL(get_ytdl_options(opts)) as ytdl:
             ytdl_data = ytdl.extract_info(url, download=True)
 
     except Exception as e:
@@ -219,10 +218,9 @@ async def download_audio(client, CallbackQuery):
         "outtmpl": "%(id)s.mp3",  # Output format changed to mp3
         "logtostderr": False,
         "quiet": True,
-        "cookiefile": cookie_txt_file(),
     }
     try:
-        with YoutubeDL(opts) as ytdl:
+        with YoutubeDL(get_ytdl_options(opts)) as ytdl:
             ytdl_data = ytdl.extract_info(url, download=True)
 
     except Exception as e:
