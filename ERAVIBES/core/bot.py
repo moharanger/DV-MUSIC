@@ -31,7 +31,7 @@ from ..logging import LOGGER
 
 class ERABot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot")
+        LOGGER(__name__).info(f"𝗪𝗮𝗶𝘁 𝗦𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗕𝗼𝘁...")
         super().__init__(
             "ERAVIBES",
             api_id=config.API_ID,
@@ -157,4 +157,4 @@ class ERABot(Client):
             except Exception as e:
                 LOGGER(__name__).error(f"Error occurred while checking bot status: {e}")
 
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"𝗠𝘂𝘀𝗶𝗰𝗕𝗼𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝗮𝘀 {self.name}")
