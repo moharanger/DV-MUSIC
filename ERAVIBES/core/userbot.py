@@ -89,7 +89,7 @@ class Userbot(Client):
                 self.one.name = get_me.first_name + " " + get_me.last_name
             else:
                 self.one.name = get_me.first_name
-            LOGGER(__name__).info(f"Assistant Started as {self.one.name}")
+            LOGGER(__name__).info(f"𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝗮𝘀 {self.one.name}")
         if config.STRING2:
             await self.two.start()
             try:
