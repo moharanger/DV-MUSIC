@@ -52,11 +52,11 @@ def git():
 
     try:
         repo = Repo()
-        LOGGER(__name__).info(f"Git Client Found [VPS DEPLOYER]")
+        LOGGER(__name__).info(f"𝗚𝗶𝘁 𝗖𝗹𝗶𝗲𝗻𝘁 𝗙𝗼𝘂𝗻𝗱 [𝗩𝗣𝗦 𝗗𝗘𝗣𝗟𝗢𝗬𝗘𝗥]")
     except GitCommandError:
         LOGGER(__name__).info(f"Invalid Git Command")
     except InvalidGitRepositoryError:
-        LOGGER(__name__).info("Invalid repository, initializing...")
+        LOGGER(__name__).info("𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗿𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆, 𝗶𝗻𝗶𝘁𝗶𝗮𝗹𝗶𝘇𝗶𝗻𝗴...")
         repo = Repo.init()
         if "origin" not in repo.remotes:
             origin = repo.create_remote("origin", UPSTREAM_REPO)
