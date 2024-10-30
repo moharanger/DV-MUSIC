@@ -59,10 +59,10 @@ async def init():
     await userbot.start()
     await ERA.start()
     await ERA.decorators()
-    LOGGER("ERAVIBES").info("ERAVIBES STARTED SUCCESSFULLY 🕊️")
+    LOGGER("ERAVIBES").info("🎉 𝗘𝗥𝗔𝗩𝗜𝗕𝗘𝗦🥳𝗦𝗧𝗔𝗥𝗧𝗘𝗗🥳𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 🎊")
     await idle()
 
 
 if __name__ == "__main__":
     asyncio.get_event_loop_policy().get_event_loop().run_until_complete(init())
-    LOGGER("ERAVIBES").info("Stopping ERAVIBES! GoodBye")
+    LOGGER("ERAVIBES").info("𝗦𝘁𝗼𝗽𝗽𝗶𝗻𝗴 𝗘𝗥𝗔𝗩𝗜𝗕𝗘𝗦! 𝗚𝗼𝗼𝗱𝗕𝘆𝗲 🥹")
